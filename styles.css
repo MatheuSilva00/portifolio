@@ -30,6 +30,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: center; /* Centraliza as abas */
 }
 
 nav ul li {
@@ -38,16 +39,22 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #4B0082; /* Cor roxa para os links */
+    color: #333; /* Cor do texto das abas */
     text-decoration: none;
-    padding: 10px;
-    transition: background 0.3s ease; /* Suaviza a transição de cor */
+    padding: 10px 20px;
     border-radius: 5px;
+    background: #e0e0e0; /* Cor de fundo clara para abas não selecionadas */
+    transition: background 0.3s ease, color 0.3s ease; /* Suaviza transições de cor e fundo */
 }
 
 nav ul li a:hover {
-    background: linear-gradient(135deg, #6a0dad, #8a2be2); /* Degradê roxo */
-    color: #fff; /* Cor do texto quando o mouse passa */
+    background: #d5a6f0; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+nav ul li a.active {
+    background: #4B0082; /* Cor de fundo para a aba selecionada */
+    color: #fff; /* Cor do texto da aba selecionada */
 }
 
 /* Seções principais */
