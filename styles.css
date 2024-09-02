@@ -15,38 +15,41 @@ body {
 
 /* Cabeçalho */
 header {
-    background: #333;
+    background: #4B0082; /* Cor roxa suave */
     color: #fff;
     padding: 1rem;
     text-align: center;
+}
+
+header a {
+    color: #fff; /* Cor do texto do título */
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header a:active,
+header a:focus {
+    color: #8A2BE2; /* Cor roxa mais viva ao clicar */
 }
 
 /* Navegação */
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin-right: 10px;
 }
 
 nav ul li a {
-    color: #fff;
-    background-color: #555;
-    padding: 10px 20px;
+    color: #4B0082; /* Cor roxa para os links */
     text-decoration: none;
-    border-radius: 5px;
-}
-
-nav ul li a.active {
-    background-color: #007BFF;
 }
 
 nav ul li a:hover {
-    background-color: #333;
+    color: #8A2BE2; /* Cor roxa mais viva ao passar o mouse */
 }
 
 /* Seções principais */
@@ -60,7 +63,7 @@ section {
 
 /* Rodapé */
 footer {
-    background: #333;
+    background: #4B0082;
     color: #fff;
     text-align: center;
     padding: 1rem;
