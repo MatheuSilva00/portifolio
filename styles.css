@@ -1,3 +1,10 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
@@ -8,30 +15,17 @@ body {
 
 /* Cabeçalho */
 header {
-    background: #4B0082; /* Cor roxa suave */
+    background: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
 
-header a {
-    color: #fff; /* Cor do texto do título */
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-header a:active,
-header a:focus {
-    color: #8A2BE2; /* Cor roxa mais viva ao clicar */
-}
-
 /* Navegação */
 nav ul {
     list-style: none;
-    color: #fff;
     padding: 0;
-    margin: 0;
-    text-align: center; /* Centraliza as abas */
+    background: linear-gradient(to right, #6a1b9a, #8e24aa);
 }
 
 nav ul li {
@@ -40,22 +34,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333; /* Cor do texto das abas */
+    color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    display: inline-block;
     border-radius: 5px;
-    background: #e0e0e0; /* Cor de fundo clara para abas não selecionadas */
-    transition: background 0.3s ease, color 0.3s ease; /* Suaviza transições de cor e fundo */
 }
 
-nav ul li a:hover {
-    background: #d5a6f0; /* Cor de fundo ao passar o mouse */
-    color: #fff; /* Cor do texto ao passar o mouse */
-}
-
+nav ul li a:hover,
 nav ul li a.active {
-    background: #4B0082; /* Cor de fundo para a aba selecionada */
-    color: #fff; /* Cor do texto da aba selecionada */
+    background: #5e35b1;
+    color: #fff;
 }
 
 /* Seções principais */
@@ -69,11 +58,42 @@ section {
 
 /* Rodapé */
 footer {
-    background: #4B0082;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Estilo do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5e35b1;
 }

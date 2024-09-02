@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="#" class="tablink" onclick="openTab(event, 'sobreMim')">Sobre Mim</a></li>
-                <li><a href="https://matheusilva00.github.io/portifolio/formacao" class="tablink" target="_blank">Formação</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'formacao')">Formação</a></li>
                 <li><a href="#" class="tablink" onclick="openTab(event, 'portifolio')">Portfólio</a></li>
                 <li><a href="#" class="tablink" onclick="openTab(event, 'contato')">Contato</a></li>
             </ul>
@@ -26,14 +26,36 @@
             <p>Olá, me chamo Matheu, sou um entusiasta iniciante na área de tecnologia, mas minhas principais experiências profissionais foram no ramo empreendedor. Me considero uma pessoa introvertida, filho de pais professores, e gosto de músicas internacionais com uma vasta gama de variedades desde Slipknot a Andrea Bocelli. Desde criança gosto de praticar vôlei e natação, e no meu tempo livre gosto de jogar videogame com meus amigos online.</p>
         </section>
 
+        <section id="formacao" class="tabcontent" style="display:none">
+            <h2>Formação</h2>
+            <p>Atualmente estou cursando Análise e Desenvolvimento de Sistemas no qual acredito que possa ser uma porta de entrada e algumas oportunidades de trabalho que tenho interesse exigem formação Superior, principalmente no exterior como Canadá e países Europeus como Alemanha, França ou Itália.</p>
+            <p>Idiomas que domino: Português (nativo), Inglês (avançado), Espanhol (intermediário).</p>
+        </section>
+
         <section id="portifolio" class="tabcontent" style="display:none">
             <h2>Portfólio</h2>
-            <p>Em breve, conteúdo do portfólio.</p>
+            <p>Em breve, conteúdo do portfólio. Enquanto isso, você pode visitar alguns trabalhos anteriores:</p>
+            <ul>
+                <li><a href="https://exemplo1.com" target="_blank">Projeto 1</a></li>
+                <li><a href="https://exemplo2.com" target="_blank">Projeto 2</a></li>
+                <li><a href="https://exemplo3.com" target="_blank">Projeto 3</a></li>
+            </ul>
         </section>
 
         <section id="contato" class="tabcontent" style="display:none">
             <h2>Contato</h2>
-            <p>Informações de contato em breve.</p>
+            <form action="javascript:void(0);" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
