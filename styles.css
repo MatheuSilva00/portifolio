@@ -57,7 +57,7 @@ nav ul li a:hover {
 
 /* Conteúdo das abas */
 .tabcontent {
-    display: none;
+    display: none;  /* Inicialmente, todas as abas estão escondidas */
     padding: 20px;
     margin-top: 20px;
     background-color: #fff;
@@ -72,11 +72,6 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 40px;
-}
-
-/* Exibição inicial da primeira aba */
-#sobreMim {
-    display: block;
 }
 
 /* Responsividade */
