@@ -7,7 +7,7 @@
 
 /* Estilos gerais */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
@@ -19,50 +19,43 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Navegação */
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    margin: 0;
-    padding: 0.5rem 0;
+    text-align: center;
 }
 
 nav ul li {
-    margin-right: 15px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 nav ul li a {
     color: #fff;
+    background-color: #555;
+    padding: 10px 20px;
     text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background: #fff;
-    color: #333;
     border-radius: 5px;
 }
 
-/* Conteúdo das abas */
-.tabcontent {
-    display: none;  /* Inicialmente, todas as abas estão escondidas */
+nav ul li a.active {
+    background-color: #007BFF;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+/* Seções principais */
+main {
     padding: 20px;
-    margin-top: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 /* Rodapé */
@@ -71,32 +64,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-top: 40px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav ul li {
-        margin-bottom: 10px;
-    }
-    
-    header {
-        padding: 1.5rem;
-    }
-    
-    main {
-        padding: 10px;
-    }
-    
-    section {
-        padding: 15px;
-    }
-    
-    footer {
-        padding: 0.5rem;
-    }
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
