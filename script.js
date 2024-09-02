@@ -17,3 +17,8 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+// Adiciona a classe "active" e exibe a primeira aba ao carregar a página
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".tablink").click();
+});
