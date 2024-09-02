@@ -3,36 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Título Aqui</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Site</h1>
-    </header>
+    <!-- Navegação -->
     <nav>
         <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#" onclick="showSection('sobre')">Sobre Mim</a></li>
+            <li><a href="#" onclick="showSection('formacao')">Formação</a></li>
+            <li><a href="#" onclick="showSection('portfolio')">Portfólio</a></li>
+            <li><a href="#" onclick="showSection('contato')">Contato</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="home">
-            <h2>Início</h2>
-            <p>Conteúdo da seção de início.</p>
-        </section>
-        <section id="about">
-            <h2>Sobre</h2>
-            <p>Conteúdo da seção sobre.</p>
-        </section>
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>Conteúdo da seção de contato.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Seu Nome</p>
-    </footer>
+
+    <!-- Seções -->
+    <section id="sobre">
+        <h1>Sobre Mim</h1>
+        <p>Olá! Eu sou Matheu, um entusiasta de [Sua área de interesse]. No meu tempo livre, gosto de [seus hobbies].</p>
+    </section>
+
+    <section id="formacao">
+        <h1>Formação</h1>
+        <p>Formação: Análise e Desenvolvimento de Sistemas - Uninter (em curso).</p>
+        <p>Idiomas: Português (nativo), Inglês (fluente), espanhol (intermediário).</p>
+    </section>
+
+    <section id="portfolio">
+        <h1>Portfólio</h1>
+        <p>Aqui estão alguns dos meus trabalhos:</p>
+        <ul>
+            <li><a href="https://exemplo.com" target="_blank">Trabalho 1</a></li>
+            <li><a href="https://exemplo.com" target="_blank">Trabalho 2</a></li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h1>Contato</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
